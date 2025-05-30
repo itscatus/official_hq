@@ -11,7 +11,7 @@ const Logo = (props: ILogoProps) => {
   return (
     <span className={`inline-flex items-center text-gray-900 ${fontStyle}`}>
       <img
-        src="../logo-white.png" // Ganti ini sesuai nama file logomu di folder public
+        src="./logo-white.png" // Ganti ini sesuai nama file logomu di folder public
         alt="Logo"
         className="mr-2"
         width={size}
