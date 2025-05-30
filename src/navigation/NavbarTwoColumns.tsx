@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 type INavbarProps = {
   logo: ReactNode;
