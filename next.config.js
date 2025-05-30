@@ -1,18 +1,17 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
-const nextConfig = {
+module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['.'],
   },
   poweredByHeader: false,
   trailingSlash: true,
-  basePath: 'vpffltldk_hq',
+  basePath: '',
+  // The starter code load resources from `public` folder with `router.basePath` in React components.
+  // So, the source code is "basePath-ready".
+  // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
-};
-
-// If you don't want to use the bundle analyzer in production/deploy, add a condition:
-export default process.env.ANALYZE === 'true'
-  ? withBundleAnalyzer(nextConfig)
-  : nextConfig;
+});
