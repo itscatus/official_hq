@@ -1,0 +1,9 @@
+@import "@fontsource/inconsolata";
+
+@import "@fontsource/zen-kaku-gothic-new";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
