@@ -1,4 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/** @type {import('next').NextConfig} */
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
@@ -9,9 +9,7 @@ module.exports = withBundleAnalyzer({
   },
   poweredByHeader: false,
   trailingSlash: true,
-  basePath: '',
-  // The starter code load resources from `public` folder with `router.basePath` in React components.
-  // So, the source code is "basePath-ready".
-  // You can remove `basePath` if you don't need it.
+  basePath: '/nama-repo', // GANTI dengan nama repository GitHub kamu
   reactStrictMode: true,
+  output: 'export', // penting untuk menjadikan static site
 });
