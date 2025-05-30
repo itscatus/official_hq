@@ -25,7 +25,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
   }, []);
 
   return (
-    <div className={`p-5 md:flex items-top justify-between`}>
+    <div className={`items-top justify-between p-5 md:flex`}>
       {/* Top Right Logo (Desktop only) */}
       <div className="order-1 hidden flex-1 items-start justify-start p-2 md:flex">
         <Link href="/">{props.logo}</Link>
