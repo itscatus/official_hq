@@ -9,7 +9,7 @@ module.exports = withBundleAnalyzer({
   },
   poweredByHeader: false,
   trailingSlash: true,
-  basePath: '/nama-repo', // GANTI dengan nama repository GitHub kamu
+  basePath: '/vpffltldk_hq', // GANTI dengan nama repository GitHub kamu
   reactStrictMode: true,
   output: 'export', // penting untuk menjadikan static site
 });
